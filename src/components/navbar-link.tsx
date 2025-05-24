@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-// import { motion } from "framer-motion";
 
 const NavbarLink = ({ label, href }: { label: string; href: string }) => {
   return (

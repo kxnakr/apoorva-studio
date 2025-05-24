@@ -32,7 +32,7 @@ const Navbar = () => {
         href="/"
         className="text-lg font-bold flex items-center gap-2 h-min"
       >
-        <Image src="/logo-512x512.png" alt="logo" width={48} height={48} />
+        <Image src="/logo.png" alt="logo" width={48} height={48} />
         <span>apoorva</span>
       </Link>
 

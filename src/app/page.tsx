@@ -1,23 +1,14 @@
 import Navbar from "@/components/navbar";
-import TV from "@/components/tv";
+import AnimatedTextWithTV from "@/components/animated-text-with-tv";
+import DesignerImpactSection from "@/components/designer-impact-section";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="2xl:max-w-[90rem] mx-auto">
       <Navbar />
-      <div className="px-10">
-        <div className="font-light text-9xl/tight flex flex-col">
-          <span>
-            <i>YOU&apos;VE</i> GOT
-          </span>
-          <span>THE IDEA,</span>
-          <span className="relative w-min">
-            PERFECT
-            <div className="absolute -bottom-24 -right-56">
-              <TV />
-            </div>
-          </span>
-        </div>
+      <div className="px-24">
+        <AnimatedTextWithTV />
+        <DesignerImpactSection />
       </div>
     </div>
   );
