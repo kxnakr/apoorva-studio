@@ -1,0 +1,76 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+MCP to use:
+- Always use Context7 to get latest docs.
+- Always use Sequential Thinking.
+- Use browser-tools mcp as needed to get more info about the local development site.
+
+
+About project:
+This is a designers portfolio.
+It should have:
+- Premium Interactions
+- Modern Design Elements
+- Sophisticated grayscale palette with black accents
+- Use custom smooth animations.
+- You can leave white spaces as it looks clean
+- Always Assume the development server is already running at port 3000
+
+It should be optimized for all the secreen sized.
+
+Technical Details:
+- Use GSAP for all the animations. @gsap/react, useGSAP() 
+- Use tailwind v4 to style the components.
+- This project is made with nextjs 15 app router. (you can add "use client" to everything as needed)
+- you can also use motion/react if needed.
+- use bun to install anything (dont update the package.json directly)
+
+Website content flow:
+
+1. NavBar
+name with logo on left
+col navbar in right, will become a cool beautifully animated hamburger menu on small screen which opens a full screen nav which all the options.
+
+2. the hero section
+the text with the minion gif (tv component)
+
+3. 2 div on the opposite site (flex)
+both divs animation will trigger at the same time or at same scroll view.
+
+4. again 2 div on the opposite site (flex)
+1st div for `works` text
+2nd for the description kind of - `A showcase of multidisciplinary design — clear thinking, clean execution, and bold visual presence.`
+
+5. then their will will 5 project section (bento grid kind of but not full their may be some white space left which is intended) and each section will contain:
+
+- 1st section = 3 proejcts
+- 2nd section = 3 projects
+- 3rd section = 3 projects
+- 4th section = 3 projects
+- 5th section = 4 projects
+
+NOTE
+- no project name or anything will be inside the box except for the play button if it is a video.
+- border 0 (whole project will have border 0)
+- check the figma link to get better understanding of how the projects are placed in each section.
+- their will be gaps between seach section of projects.
+
+6. About me section
+2 div on the opposite site (flex)
+1st div contain the text `about me` (flex 35%)
+2nd div will contain the data for about me and the clients list which will be kind of marquee (rest 65%)
+
+7. contact section.
+- make it center align.
+- it will have `HAVE AN IDEA?` text then image to right of it and a button to right of image with text - `ping me!`
+
+8. Footer
+- 2 div on the opposite site (flex)
+1st div - `portfolio by apoorva kumari`
+2nd div - `lets connect on LinkedIn too`
+
+Sites Figma link - https://www.figma.com/design/8eCh0yI50iFc9tjmJZ79E7/Apoorva-Studio?node-id=104-2&t=JNWUVMEAZ8tWhgLv-4
+Check Out https://blog.olivierlarose.com to get more ideas for the site.

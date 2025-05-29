@@ -1,7 +1,7 @@
 "use client";
 
-import { MultiLineTextAnimate } from "@/components/multi-line-text-animate";
-import TV from "@/components/tv";
+import { MultiLineTextAnimate } from "@/components/basic/multi-line-text-animate";
+import TV from "@/components/basic/tv";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { useState } from "react";
@@ -16,13 +16,13 @@ export default function AnimatedTextWithTV({
   const [showTV, setShowTV] = useState(false);
 
   const handleTextAnimationComplete = () => {
-    setTimeout(() => setShowTV(true), 200);
+    setTimeout(() => setShowTV(true), 100);
   };
 
   return (
     <div
       className={cn(
-        "font-light text-9xl/tight inline-flex flex-col relative",
+        "font-light text-6xl/tight pt-16 xs:text-7xl/tight sm:pt-24 sm:text-8xl/tight lg:pt-0 2xl:text-9xl/tight inline-flex flex-col relative transition-all duration-400 ease-in-out",
         className
       )}
     >
@@ -36,8 +36,8 @@ export default function AnimatedTextWithTV({
 
       {showTV && (
         <motion.div
-          className="absolute -bottom-24 -right-4 "
-          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          className="absolute -bottom-28 -right-20 xs:-bottom-26  xs:-right-14 sm:-bottom-28 sm:-right-14 scale-50 sm:scale-80 2xl:scale-100"
+          initial={{ opacity: 0, scale: 0.4, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{
             duration: 0.6,

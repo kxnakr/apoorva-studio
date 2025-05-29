@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "../styles/globals.css";
+import CursorFollower from "@/components/basic/cursor-follower";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={nunito.variable}>{children}</body>
+      <body className={nunito.variable}>
+        <CursorFollower />
+        {children}
+      </body>
     </html>
   );
 }

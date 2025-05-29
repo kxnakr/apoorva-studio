@@ -9,7 +9,7 @@ const TV = () => {
           src="/celebrating-minions.gif"
           alt="logo"
           fill
-          className="object-cover shadow-lg rounded-lg"
+          className="object-cover shadow-lg rounded-lg scale-x-[-1]" // `scale-x-[-1]` invert the image horizontally
           unoptimized
         />
       </div>
