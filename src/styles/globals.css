@@ -13,26 +13,24 @@
   --breakpoint-xs: 30rem;
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 @layer components {
-  /* button {
-    cursor: pointer;
-  } */
-  a,
-  button,
-  [role="button"],
-  input,
-  textarea,
-  select {
+  button {
     cursor: pointer;
   }
 }
 
 @layer base {
-  * {
-    cursor: none;
-  }
   body {
     @apply bg-background font-nunito text-foreground antialiased;
-    cursor: none;
   }
 }

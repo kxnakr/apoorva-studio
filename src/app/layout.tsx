@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "../styles/globals.css";
-import CursorFollower from "@/components/basic/cursor-follower";
+import { SmoothCursor } from "@/components/basic/smooth-cursor";
+import { ProjectDrawer } from "@/components/basic/project-drawer";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -21,8 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.variable}>
-        <CursorFollower />
-        {children}
+        <SmoothCursor />
+        <main data-vaul-drawer-wrapper className="bg-background">
+          {children}
+          <ProjectDrawer />
+        </main>
       </body>
     </html>
   );

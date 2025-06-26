@@ -25,7 +25,7 @@ const links = [
   },
   {
     label: "resume",
-    href: "#resume",
+    href: "https://drive.google.com/file/d/1BwQ6uQ6g-B4Ul6pKJYvBlmX7hA953h2C/view",
   },
   {
     label: "linkedIn",
@@ -103,11 +103,7 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle mobile menu"
         >
-          {isMobileMenuOpen ? (
-            <X size={24} className="text-black" />
-          ) : (
-            <Menu size={24} className="text-gray-600" />
-          )}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
 
@@ -117,7 +113,7 @@ const Navbar = () => {
           isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full text-black">
+        <div className="flex flex-col items-center justify-center h-full">
           <div className="flex flex-col space-y-8 text-center text-2xl font-normal">
             {links.map((link, index) => (
               <Link
