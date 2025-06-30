@@ -22,7 +22,7 @@ export default function AnimatedTextWithTV({
   return (
     <div
       className={cn(
-        "font-light text-6xl/tight pt-16 xs:text-7xl/tight sm:pt-24 sm:text-8xl/tight lg:pt-0 2xl:text-9xl/tight inline-flex flex-col relative transition-all duration-400 ease-in-out",
+        "font-light text-5xl/tight pt-16 xs:text-7xl/tight sm:pt-24 sm:text-8xl/tight lg:pt-0 2xl:text-9xl/tight inline-flex flex-col relative transition-all duration-400 ease-in-out",
         className
       )}
     >
@@ -36,7 +36,7 @@ export default function AnimatedTextWithTV({
 
       {showTV && (
         <motion.div
-          className="absolute -bottom-28 -right-20 xs:-bottom-26  xs:-right-14 sm:-bottom-28 sm:-right-14 scale-50 sm:scale-80 2xl:scale-100"
+          className="absolute -bottom-32 -right-26 xs:-bottom-26  xs:-right-14 sm:-bottom-28 sm:-right-14 scale-50 sm:scale-80 2xl:scale-100"
           initial={{ opacity: 0, scale: 0.4, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{

@@ -8,7 +8,7 @@ export const GridTwo = () => {
   const { openDrawer } = useDrawer();
 
   return (
-    <div className="flex flex-col lg:grid grid-cols-9 grid-rows-9 gap-16 lg:gap-4">
+    <div className="flex flex-col lg:grid grid-cols-9 grid-rows-9 gap-16 lg:gap-4 lg:mt-10">
       <div
         className="col-span-3 row-span-9 relative space-y-4"
         onClick={() =>

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="2xl:max-w-[90rem] mx-auto">
       <Navbar />
-      <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 ">
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 flex flex-col">
         <AnimatedTextWithTV />
         <DesignerImpact />
         <Works />

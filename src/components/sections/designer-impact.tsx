@@ -85,7 +85,7 @@ export default function DesignerImpactSection() {
 
       <div
         ref={rightContentRef}
-        className="text-4xl sm:text-5xl md:text-6xl/snug font-normal text-right lg:text-left"
+        className="text-4xl sm:text-5xl md:text-[4rem]/snug font-normal text-right lg:text-left"
       >
         LEAVE THE
         <br />

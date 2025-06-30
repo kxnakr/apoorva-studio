@@ -24,13 +24,13 @@ export default function About() {
   });
 
   return (
-    <section className="mt-16 sm:mt-20 md:mt-24 lg:mt-32" id="about-me">
+    <section className="mt-32 lg:mt-96" id="about-me">
       <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12">
         {/* Title */}
         <div className="lg:col-span-5">
           <h2
             ref={titleRef}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal"
+            className="text-4xl sm:text-5xl md:text-[4rem] font-normal"
           >
             about me
           </h2>

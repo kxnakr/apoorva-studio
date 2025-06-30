@@ -80,11 +80,13 @@ const Navbar = () => {
           <Image
             src="/logo.png"
             alt="logo"
-            width={32}
-            height={32}
+            width={75}
+            height={75}
+            quality={100}
+            priority
             className="sm:w-12 sm:h-12"
           />
-          <span className="text-base sm:text-lg">apoorva</span>
+          <span className="text-base sm:text-xl">apoorva</span>
         </Link>
 
         {/* Desktop Navigation */}

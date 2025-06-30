@@ -26,8 +26,8 @@ export default function Clients() {
   });
 
   return (
-    <section className="mt-16 sm:mt-20 md:mt-24 lg:mt-32">
-      <div className="mb-8 sm:mb-12 md:mb-14">
+    <section className="mt-12 sm:mt-20 md:mt-24">
+      <div className="mb-8 sm:mb-12">
         <h2
           ref={titleRef}
           className="text-3xl sm:text-4xl md:text-5xl font-normal text-gray-600"
@@ -36,7 +36,6 @@ export default function Clients() {
         </h2>
       </div>
 
-      {/* Super Simple Marquee */}
       <div>
         <Marquee
           speed={50}
@@ -45,7 +44,7 @@ export default function Clients() {
           gradientColor="#f2f2f2"
         >
           {CLIENTS.map((client, index) => (
-            <div key={index} className="mx-4 sm:mx-6 md:mx-8">
+            <div key={index} className="mx-4 sm:mx-6 md:mx-8 grayscale">
               <Image
                 src={`/clients/${client}.webp`}
                 alt={client}
