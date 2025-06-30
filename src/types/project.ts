@@ -1,4 +1,4 @@
-export type IProjectContentType = "video" | "image";
+export type IProjectContentType = "video" | "image" | "mux-video";
 
 export interface IProjectContent {
   type: IProjectContentType;

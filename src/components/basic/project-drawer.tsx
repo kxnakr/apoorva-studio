@@ -7,6 +7,7 @@ import { IProjectContent } from "@/types/project";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import MuxVideo from "@mux/mux-video/react";
 
 const ProjectContentRenderer = ({
   item,
@@ -41,6 +42,27 @@ const ProjectContentRenderer = ({
         </div>
       );
 
+    case "mux-video":
+      return (
+        <div
+          className={cn(
+            "relative w-full aspect-video overflow-hidden col-span-2",
+            item?.className
+          )}
+        >
+          <MuxVideo
+            playbackId={item.source}
+            loop
+            muted
+            autoplay={isDrawerOpen}
+            metadata={{
+              video_title: item.alt || "Project video",
+              viewer_user_id: "project-viewer",
+            }}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      );
     case "image":
       return (
         <div className={cn("relative w-full overflow-hidden", item?.className)}>

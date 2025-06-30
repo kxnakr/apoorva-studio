@@ -15,8 +15,8 @@ export const GridOne = () => {
             title: "Under the spell | VR game",
             content: [
               {
-                type: "video",
-                source: "demo.mp4",
+                type: "mux-video",
+                source: "ABA5A86o00S6u5joOjqBj6gTP49knMEXALf7w01D01k5mc",
               },
               {
                 type: "image",
@@ -32,13 +32,14 @@ export const GridOne = () => {
         }
       >
         <Image
-          src="/projects/under-the-spell/thumbnail.gif"
+          src="https://image.mux.com/uuXvrZaQlP02G8yYVCVUX02qoxDxdlhuvH003ZYgi2KgCk/animated.gif?width=640"
           alt="Under the spell"
           width={748}
           height={421}
           quality={100}
           className="w-full h-full object-cover"
         />
+
         <div className="lg:absolute -bottom-10 text-lg">
           Under the spell | VR game
         </div>

@@ -89,7 +89,15 @@ export function SmoothCursor({
     restDelta: 0.001,
   },
 }: SmoothCursorProps) {
-  //   const [isMoving, setIsMoving] = useState(false);
+  const isMobileDevice =
+    typeof window !== "undefined" &&
+    (() => {
+      const a = navigator.userAgent || "";
+      return /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
+        a
+      );
+    })();
+
   const lastMousePos = useRef<Position>({ x: 0, y: 0 });
   const velocity = useRef<Position>({ x: 0, y: 0 });
   const lastUpdateTime = useRef(Date.now());
@@ -110,6 +118,12 @@ export function SmoothCursor({
   });
 
   useEffect(() => {
+    // Don't set up cursor tracking on mobile devices
+    if (isMobileDevice) {
+      document.body.style.cursor = "auto";
+      return;
+    }
+
     const updateVelocity = (currentPos: Position) => {
       const currentTime = Date.now();
       const deltaTime = currentTime - lastUpdateTime.current;
@@ -149,11 +163,9 @@ export function SmoothCursor({
         previousAngle.current = currentAngle;
 
         scale.set(0.95);
-        // setIsMoving(true);
 
         const timeout = setTimeout(() => {
           scale.set(1);
-          //   setIsMoving(false);
         }, 150);
 
         return () => clearTimeout(timeout);
@@ -178,7 +190,11 @@ export function SmoothCursor({
       document.body.style.cursor = "auto";
       if (rafId) cancelAnimationFrame(rafId);
     };
-  }, [cursorX, cursorY, rotation, scale]);
+  }, [cursorX, cursorY, rotation, scale, isMobileDevice]);
+
+  if (isMobileDevice) {
+    return null;
+  }
 
   return (
     <motion.div
