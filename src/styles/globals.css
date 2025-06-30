@@ -25,7 +25,7 @@
 
 @layer components {
   button {
-    cursor: pointer;
+    cursor: none;
   }
 }
 

@@ -8,7 +8,7 @@ export const GridOne = () => {
   return (
     <div className="flex flex-col lg:grid grid-cols-10 grid-rows-9 gap-16 lg:gap-4">
       <div
-        className="col-span-6 row-span-5 relative cursor-pointer space-y-4"
+        className="col-span-6 row-span-5 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "under-the-spell",
@@ -45,7 +45,7 @@ export const GridOne = () => {
       </div>
 
       <div
-        className="col-span-4 row-span-9 col-start-7 relative cursor-pointer space-y-4"
+        className="col-span-4 row-span-9 col-start-7 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "she",
@@ -76,7 +76,7 @@ export const GridOne = () => {
       </div>
 
       <div
-        className="col-span-3 row-span-4 col-start-4 row-start-6t relative cursor-pointer space-y-4"
+        className="col-span-3 row-span-4 col-start-4 row-start-6t relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "kantha",

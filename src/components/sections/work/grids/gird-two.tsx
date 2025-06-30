@@ -10,7 +10,7 @@ export const GridTwo = () => {
   return (
     <div className="flex flex-col lg:grid grid-cols-9 grid-rows-9 gap-16 lg:gap-4">
       <div
-        className="col-span-3 row-span-9 relative cursor-pointer space-y-4"
+        className="col-span-3 row-span-9 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "logo-design",
@@ -69,7 +69,7 @@ export const GridTwo = () => {
       </div>
 
       <div
-        className="col-span-3 row-span-7 col-start-4 relative cursor-pointer space-y-4"
+        className="col-span-3 row-span-7 col-start-4 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "research-paper",
@@ -112,7 +112,7 @@ export const GridTwo = () => {
       </div>
 
       <div
-        className="col-span-3 row-span-5 col-start-7 relative cursor-pointer space-y-4"
+        className="col-span-3 row-span-5 col-start-7 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "bequest",

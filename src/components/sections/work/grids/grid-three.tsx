@@ -13,7 +13,7 @@ export const GridThree = () => {
   return (
     <div className="flex flex-col lg:grid grid-cols-12 grid-rows-9 gap-16 lg:gap-4 lg:max-h-[48rem]">
       <div
-        className="col-span-4 row-span-9 relative cursor-pointer space-y-4"
+        className="col-span-4 row-span-9 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "3d-visualization",
@@ -43,7 +43,7 @@ export const GridThree = () => {
       </div>
 
       <div
-        className="col-span-8 row-span-5 col-start-5 relative cursor-pointer space-y-4"
+        className="col-span-8 row-span-5 col-start-5 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "system-thinking",
@@ -73,7 +73,7 @@ export const GridThree = () => {
       </div>
 
       <div
-        className="col-span-4 row-span-4 col-start-9 row-start-6 relative cursor-pointer space-y-4"
+        className="col-span-4 row-span-4 col-start-9 row-start-6 relative space-y-4"
         onClick={() =>
           openDrawer({
             id: "illustrations",

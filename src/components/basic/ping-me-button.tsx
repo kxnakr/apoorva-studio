@@ -11,7 +11,7 @@ const PingMeButton = () => {
   return (
     <Link href={`mailto:${email}`}>
       <motion.button
-        className="relative overflow-hidden border border-gray-800 px-6 py-4 font-medium text-gray-800 select-none cursor-pointer"
+        className="relative overflow-hidden border border-gray-800 px-6 py-4 font-medium text-gray-800 select-none"
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         whileTap={{ scale: 0.98 }}
