@@ -69,9 +69,10 @@ const ProjectContentRenderer = ({
           <Image
             src={`/projects/${id}/${item.source}`}
             alt={item.alt || "Project image"}
-            width={800}
-            height={600}
-            quality={100}
+            // height={1920}
+            // width={1080}
+            // quality={100}
+            unoptimized
             className="object-cover w-full h-full"
             priority={isDrawerOpen}
           />
