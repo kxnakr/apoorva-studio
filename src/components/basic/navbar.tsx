@@ -25,7 +25,7 @@ const links = [
   },
   {
     label: "resume",
-    href: "https://drive.google.com/file/d/1BwQ6uQ6g-B4Ul6pKJYvBlmX7hA953h2C/view",
+    href: "https://drive.google.com/file/d/1hkYmUfxDc1tXd0Eczd1Cyh_3E03mnFah/view",
   },
   {
     label: "linkedIn",
