@@ -22,7 +22,7 @@ export default function AnimatedTextWithTV({
   return (
     <div
       className={cn(
-        "font-light text-5xl/tight pt-16 xs:text-7xl/tight sm:pt-24 sm:text-8xl/tight lg:pt-0 2xl:text-9xl/tight inline-flex flex-col relative transition-all duration-400 ease-in-out",
+        "font-light text-5xl/tight pt-16 xs:text-7xl/tight sm:pt-24 sm:text-8xl/tight lg:pt-0 2xl:text-9xl/tight inline-flex flex-col relative transition-all duration-400 ease-in-out w-fit",
         className
       )}
     >
