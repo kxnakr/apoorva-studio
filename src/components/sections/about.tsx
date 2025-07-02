@@ -24,7 +24,7 @@ export default function About() {
   });
 
   return (
-    <section className="mt-32 lg:mt-96" id="about-me">
+    <section className="mt-32 lg:mt-68" id="about-me">
       <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12">
         {/* Title */}
         <div className="lg:col-span-5">
@@ -37,8 +37,8 @@ export default function About() {
         </div>
 
         {/* Content */}
-        <div ref={contentRef} className="lg:col-span-7">
-          <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
+        <div ref={contentRef} className="lg:col-span-7 lg:mt-26">
+          <div className="space-y-4 sm:space-y-5 text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
             <p>
               Hi, I&apos;m{" "}
               <span className="text-black font-medium">Apoorva Kumari</span> — a
@@ -53,11 +53,7 @@ export default function About() {
               — one that bridges function and feeling, purpose and emotion.
               Whether it&apos;s 2D, 3D, or UI / UX, I use the right medium to
               make meaning. To me, design is messy, beautiful, and always
-              evolving. And I love that.
-            </p>
-
-            <p>
-              My work lives at the intersection of people, tech, and business —
+              evolving. And I love that. My work lives at the intersection of people, tech, and business —
               where real problems exist and better experiences are waiting to be
               built.
             </p>
